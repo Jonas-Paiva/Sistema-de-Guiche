@@ -1,5 +1,3 @@
-
-
 let currentNumberGlobal = 0;
 let currentNumberPriorid = 0;
 
@@ -8,7 +6,7 @@ document.addEventListener("keydown", function(event) {
     if (event.key === "ArrowUp") {
         let passNumber = document.getElementById("pass-number");
         currentNumberGlobal = currentNumberGlobal + 1;
-        passNumber.textContent = currentNumberGlobal;
+        passNumber.textContent = `N${currentNumberGlobal}`;
     }
 });
 
@@ -36,18 +34,13 @@ document.addEventListener("keydown", function(event) {
 
 //Seleciona o guichê
 document.addEventListener("keydown", function(event) {
-    let guicheNumber = parseInt(event.key)
-    if (guicheNumber >= 0  ) {
-
+    let NumberKey = parseInt(event.key)
+    if (NumberKey > 0  ){
         let guicheNumber = document.getElementById("guiche-number");
-        let onlyNumber = parseInt(event.key);
-        
-        if( onlyNumber >= 0){
-            guicheNumber.textContent = onlyNumber;
-        }
+            guicheNumber.textContent = NumberKey;
 
         let audio = document.getElementById("digdong");
-        audio.currentTime = 0;  // Reinicia o som caso já esteja tocando
+        audio.currentTime = 0; // Reinicia o som caso já esteja tocando
         audio.play();
     }
 });
