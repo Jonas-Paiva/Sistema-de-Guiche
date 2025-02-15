@@ -21,7 +21,7 @@ document.addEventListener("keydown", function(event) {
 });
 
 
-//reseta os contadores
+//reset os contadores
 document.addEventListener("keydown", function(event) {
     if (event.key === "r") {
         let passNumber = document.getElementById("pass-number");

@@ -1,0 +1,23 @@
+{
+	"name": "sistema-de-guiche",
+	"version": "1.0.0",
+	"description": "Sistema de Guichê que eu fiz para uma Gráfica, para organizar as filas de espera.",
+	"main": "main.js",
+	"scripts": {
+		"start": "electron ."
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Jonas-Paiva/Sistema-de-Guiche.git"
+	},
+	"keywords": [],
+	"author": "jonas Paiva",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/Jonas-Paiva/Sistema-de-Guiche/issues"
+	},
+	"homepage": "https://github.com/Jonas-Paiva/Sistema-de-Guiche#readme",
+	"devDependencies": {
+		"electron": "^34.2.0"
+	}
+}
