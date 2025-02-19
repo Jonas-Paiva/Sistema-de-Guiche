@@ -5,11 +5,16 @@ body {
 
 #head{
     top: 0px;
+    display: flex;
+    justify-content: space-between;
 }
 
 #logo{
     height: 60px;
 }
+ #menu-h{
+    height: 60px
+ }
 
 #info{
     display: flex;
